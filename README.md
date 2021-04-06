@@ -28,7 +28,7 @@ As a user, I want to be able to view create and track daily workouts. I want to 
 
 -   [Github Repo] (https://github.com/nescalante92/fitness-tracker)
 
--   [Heroku Deployed Website] (https://calm-cove-45043.herokuapp.com/?id=606b9339e32a5d0015d9aed8)
+-   [Heroku Deployed Website] (https://calm-cove-45043.herokuapp.com/?id=606bb53e0d97070015ec4248)
 
 -------------------------
 
