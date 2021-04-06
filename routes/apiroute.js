@@ -24,8 +24,11 @@ router.get("/api/workouts", (req, res) => {
 });
 
 //updates a workout
-router.put("/api/workouts", (req, res) => {
-    db.Workout.update({})
+//sited code: https://docs.mongodb.com/manual/reference/method/db.collection.updateOne/#mongodb-method-db.collection.updateOne
+router.put("/api/workouts/:id", (req, res) => {
+    db.Workout.updateOne({ _id: req.params.id }, {$push: { exercises: {
+        ...req.body
+    }}} )
         .then(dbWorkout => {
             res.json(dbWorkout);
         })
